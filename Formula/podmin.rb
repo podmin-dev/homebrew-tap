@@ -5,21 +5,21 @@
 class Podmin < Formula
   desc "Minimal, secure container platform"
   homepage "https://podmin.dev"
-  version "0.10.1"
+  version "0.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/podmin-dev/podmin/releases/download/v0.10.1/podmin_0.10.1_darwin_amd64.tar.gz"
-      sha256 "13bcc4ba0655309f4dbaef0ce9d976c8fc617e78ec410302af97e7a3ae8d0426"
+      url "https://github.com/podmin-dev/podmin/releases/download/v0.11.0/podmin_0.11.0_darwin_amd64.tar.gz"
+      sha256 "84ac33615da48324b717262e4da4e5a7d90b10a577ea4559a3d4b62738dac7a9"
 
       define_method(:install) do
         bin.install "podmin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/podmin-dev/podmin/releases/download/v0.10.1/podmin_0.10.1_darwin_arm64.tar.gz"
-      sha256 "c161dc2cb5216de0cf2c012b0899ce4c79337e52ec9d9c633e42c9098c82921e"
+      url "https://github.com/podmin-dev/podmin/releases/download/v0.11.0/podmin_0.11.0_darwin_arm64.tar.gz"
+      sha256 "00671b3a6631cbbcebe1b8d1daf522cdc12064cf8b1fbc653a77d166adffb041"
 
       define_method(:install) do
         bin.install "podmin"
@@ -29,15 +29,15 @@ class Podmin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podmin-dev/podmin/releases/download/v0.10.1/podmin_0.10.1_linux_amd64.tar.gz"
-      sha256 "b5385c88679d9415ba1059835d8a79879f50088baf699fcacde3f0c07ab26ae3"
+      url "https://github.com/podmin-dev/podmin/releases/download/v0.11.0/podmin_0.11.0_linux_amd64.tar.gz"
+      sha256 "801c7079b9470caa593f250a03e85d45b010cffd733a0fb0e20c588f08c9ef60"
       define_method(:install) do
         bin.install "podmin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podmin-dev/podmin/releases/download/v0.10.1/podmin_0.10.1_linux_arm64.tar.gz"
-      sha256 "e4e4d47bff6b48f01866c996391a4ffe9145288492aa3eb18b4c94a2da6c5a0c"
+      url "https://github.com/podmin-dev/podmin/releases/download/v0.11.0/podmin_0.11.0_linux_arm64.tar.gz"
+      sha256 "dcf5cad872f28389e50165f2d6a1a9fb86bc4f6b7b4db09fa1bfd661aa5954e8"
       define_method(:install) do
         bin.install "podmin"
       end
